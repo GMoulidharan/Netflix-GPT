@@ -5,6 +5,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfi
 import { auth } from '../utils/firebase';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
+import { USER_AVATAR } from '../utils/constants';
 
 const Login = () => {
     const dispatch = useDispatch();
@@ -38,7 +39,7 @@ const Login = () => {
                     // Signed up 
                     const user = userCredential.user;
                     updateProfile(user, {
-                        displayName: name.current.value, photoURL: "https://avatars.githubusercontent.com/u/12824231?v=4"
+                        displayName: name.current.value, photoURL: USER_AVATAR
                     }).then(() => {
                         // Profile updated!
                         //dispatch an action & update profile once again
