@@ -24,3 +24,5 @@ export const OPEN_AI_KEY = process.env.REACT_APP_OPEN_AI_KEY;
 
 console.log("AI key: "+process.env.REACT_APP_OPEN_AI_KEY);
 console.log("TMBD Key: "+process.env.REACT_APP_TMDB_KEY);
+
+export const GEMINI_LOGO = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/344px-Google_Gemini_logo.svg.png";
