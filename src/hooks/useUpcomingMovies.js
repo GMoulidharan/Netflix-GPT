@@ -15,6 +15,7 @@ import { useEffect } from "react";
     };
     useEffect(()=>{
         if(!upComingMovies) getUpcomingMovies();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[]);
  }
 
