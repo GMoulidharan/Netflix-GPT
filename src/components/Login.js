@@ -71,7 +71,7 @@ const Login = () => {
             )
                 .then((userCredential) => {
                     // Signed in 
-                    const user = userCredential.user;
+                    const user = userCredential.user;// eslint-disable-line no-unused-vars
                 })
                 .catch((error) => {
                     const errorCode = error.code;
